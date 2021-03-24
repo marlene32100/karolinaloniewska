@@ -12,6 +12,18 @@
     <link rel="pingback" href="https: //domainname.com/xmlrpc.php" />
     <title>Karolina Loniewska</title>
     <!-- style and script resources -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/style.css" media="all" />
     <script src=""></script>
     <!--meta properties -->
@@ -80,15 +92,277 @@
     />
     <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
   </head>
-  <body>
+  <body class="home" id="home">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <!--FULL PAGE MENU-->
+    <div class="container-fluid menu-full-page text-center" id="menu-full-page">
+      <div class="menu-links p-0" id="menu-links">
+        <h3 class="link-item mb-3"><a href="home.html">home page</a></h3>
+        <h3 class="link-item mb-3">
+          <a href="home.html/#företag">om företag</a>
+        </h3>
+        <h3 class="link-item mb-3">
+          <a href="home.html/#tjänster">tjänster</a>
+        </h3>
+        <h3 class="link-item mb-3">
+          <a href="home.html/#miljö">miljö och hållbarhet</a>
+        </h3>
+        <h3 class="link-item mb-3">
+          <a href="home.html/#kontakt">boka/kontakt</a>
+        </h3>
+      </div>
+      <i class="fas fa-times close-icon" id="close-icon"></i>
+    </div>
+    <!--MAIN CONTAINER-->
+    <div
+      class="container-fluid w-100 h-100 p-0 main-container home-page"
+      id="main-container"
+    >
+      <!--MAIN-->
+      <main>
+        <!--NAVBAR-->
+        <div class="header-container fixed-bottom">
+          <header class="company-name-green w-100">
+            <h1>KAROLINA LONIEWSKA</h1>
+            <h2>Städfirma</h2>
+          </header>
+          <nav class="mobile-nav nav-green">
+            <div onclick="menu()">
+              <i class="fas fa-bars hamburger-menu-green"></i>
+            </div>
+          </nav>
+        </div>
+        <section class="company-intro container-fluid">
+          <div class="left-area">
+            <h2 class="title-inside-container-left">
+              Rent <br />
+              Fräscht<br />
+              Proffsigt
+            </h2>
+            <p class="paragraph-left">
+              Med många års erfarenhet av städning, erbjuder jag ett extremt
+              professionellt bemötande.<br /><br />
+              Du kan alltid känna dig trygg när du väljer mina tjänster.
+            </p>
+          </div>
+        </section>
+        <!--ABOUT COMPANY SECTION-->
+        <section class="företag container-fluid" id="företag">
+          <h1 class="title-section">Företag</h1>
+        </section>
+        <!--TJÄNSTER-->
+        <section class="tjänster container-fluid" id="tjänster">
+          <h1 class="title-section">Tjänster</h1>
+          <p class="blurred">
+            Tänk om du kunde ha ett helt rent hus varje vecka, utan att spendera
+            en enda minut städning?
+          </p>
+          <div class="row mb-5">
+            <div class="col-12 col-md-6">
+              <div class="row section-text-area">
+                <div class="col-12 mb-5">
+                  <p class="emphasis">Jag tar hand om allt.</p>
+                </div>
+                <div class="col-12 mb-5">
+                  <a href="#vecko" class="btn-choose">Veckostädning</a>
+                </div>
+                <div class="col-12 mb-5">
+                  <a href="#engång" class="btn-choose">Engångstädning</a>
+                </div>
+                <div class="col-12 mb-5">
+                  <a href="#flytt" class="btn-choose">Flyttstädning</a>
+                </div>
+                <div class="col-12 mb-5">
+                  <a href="#extra" class="btn-choose">Extra</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 image-area w-100 h-100 p-0">
+              <img
+                src="assets/images/room-sm.jpg"
+                alt="Minimalistic room with a plant on the left"
+                class="image-section"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!--VECKOSTÄDNING-->
+        <section class="container-fluid" id="vecko">
+          <h1 class="title-section mb-5">
+            Veckostädning<br />
+            Engångstädning
+          </h1>
+          <div class="row">
+            <div class="col-12 col-md-6 image-area w-100 h-100 mb-5 p-0">
+              <picture>
+                <source
+                  srcset="assets/images/toilet-lg.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="assets/images/toilet-md.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="assets/images/toilet-sm.jpg"
+                  alt="Toilet sink with toothbrush and soap in natural colors"
+                  class="image-section"
+                />
+              </picture>
+            </div>
+            <div class="col-12 col-md-6 blurred mb-5">
+              <p class="cleaning-description">
+                <strong>Alla rum:</strong> <br />
+                Dammtorkning av öppna ytor; <br />Dammsugning och moppning av
+                golv; <br /><br />
+                <strong>Kök:</strong> <br />Rengöring av diskbänk, bänkar och
+                spis; <br />Rengöring av utsidor på vitvaror; <br />Avtorkning
+                av alla köksluckor och utsida fläkt; <br />Rengöring av kakel;
+                <br /><br />
+                <strong>Badrum och toalett:</strong>
+                <br />Rengöring av badkar och duschkabin; <br />Rengöring av
+                handfat; <br />Rengöring av toalettstol; <br />Putsning av
+                speglar; <br />Rengöring av golv; <br />Rengöring av kakel.
+              </p>
+              <div class="btn-container">
+                <a
+                  href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
+                  rel="noopener"
+                  rel="”noreferrer”"
+                  class="btn-cta"
+                  >Boka nu</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--FLYTTSTÄDNING-->
+        <section class="container-fluid" id="flytt">
+          <h1 class="title-section mb-5">Flyttstädning</h1>
+          <div class="row">
+            <div class="col-12 col-md-6 blurred mb-5">
+              <p class="cleaning-description">
+                Dammsugning och våttorkning alla golv; <br />Putsning
+                fönster;<br />
+                Våttorkning alla garderober och skåp – på insidan och alla
+                utsidor; <br />Rengöring spisen, plattor, ugnen, galler, utsidan
+                och området bakom spisen; <br />Rengöring alla ytor i och utanpå
+                kyl och frys; <br />Rengöring alla ytor i badrummet –
+                kakelplattor, golv, toalettstol, badkar, badrumsskåp;
+                <br />Rensning golvbrunnar; <br />Städning och torkning av alla
+                ytor på balkong eller uteplats;
+              </p>
+              <div class="btn-container">
+                <a
+                  href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
+                  rel="noopener"
+                  rel="”noreferrer”"
+                  class="btn-cta"
+                  >Boka nu</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6 image-area w-100 h-100 mb-5 p-0">
+              <picture>
+                <source
+                  srcset="assets/images/living-lg.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="assets/images/living-md.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="assets/images/living-sm.jpg"
+                  alt="Living room with a wooden ladder and a cloth"
+                  class="image-section"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <!--EXTRA-->
+        <section class="container-fluid" id="extra">
+          <h1 class="title-section mb-5">Extra</h1>
+          <div class="row">
+            <div class="col-12 col-md-6 blurred mb-5">
+              <p class="cleaning-description">
+                Det finns flera extra-tjänster ni kan beställa:<br />
+                Fönsterputsning; <br />
+                Ugn rengöring (insidan);<br />
+                Kyl rengöring (insidan); <br />
+                Frys rengöring (insidan).
+              </p>
+              <div class="btn-container">
+                <a
+                  href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
+                  rel="noopener"
+                  rel="”noreferrer”"
+                  class="btn-cta"
+                  >Boka nu</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6 image-area w-100 h-100 mb-5 p-0">
+              <picture>
+                <source
+                  srcset="assets/images/sofa-l.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="assets/images/sofa-md.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="assets/images/sofa-sm.jpg"
+                  alt="Minimal sofa with natural colors"
+                  class="image-section"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <!--VECKOSTÄDNING-->
+        <section></section>
+        <!--MILJä-->
+        <section class="miljö container-fluid" id="miljö">
+          <h1 class="title-section">Mjliö</h1>
+          <p>This is a text on how this section could look like</p>
+        </section>
+        <section class="kontakt container-fluid" id="kontakt">
+          <h1 class="title-section">Kontakt</h1>
+          <p>This is a text on how this section could look like</p>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
 
     <link rel="stylesheet" type="text/css" href="/" media="print" />
-    <script src="" async defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/background-nav.js" async defer></script>
+    <script src="assets/js/menu.js" async defer></script>
   </body>
 </html>

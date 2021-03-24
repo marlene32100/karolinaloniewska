@@ -2,6 +2,7 @@
 
 * {
   font-size: 10px;
+  color: rgba(89, 81, 79);
 }
 
 body {
@@ -21,8 +22,15 @@ h2 {
   font-size: 2.5rem;
 }
 
-.company-name h2 {
+.company-name h2,
+.company-name-green h2 {
   font-weight: 200;
+}
+
+.title-inside-container-left {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
 }
 
 h3.link-item a {
@@ -41,12 +49,45 @@ h3.link-item a {
   font-size: 3rem;
 }
 
+.paragraph-left,
+p {
+  font-family: "Lora", sans-serif;
+  font-size: 1.6rem;
+}
+
+.title-section {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.emphasis {
+  font-size: 2.6rem;
+}
+
+.cleaning-description strong {
+  font-size: 1.6rem;
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+}
+
 /* COLOR PALETTE */
+
+.blurred {
+  color: rgba(89, 81, 79);
+}
 
 .company-name,
 .link-item a,
 .close-icon {
   color: #d9d6d0;
+}
+
+.company-name-green,
+.hamburger-menu-green {
+  color: #56732c;
+  z-index: 9999;
 }
 
 .link-item a:hover,
@@ -56,6 +97,15 @@ h3.link-item a {
 .close-icon:focus,
 .close-icon:active {
   color: #afbf75;
+}
+
+.paragraph-left {
+  background-color: rgba(86, 115, 44, 0.5);
+  color: #d9d6d0;
+}
+
+.scrolled {
+  background-color: #d9d6d0;
 }
 
 /* LANDING PAGE */
@@ -68,9 +118,109 @@ h3.link-item a {
   background-color: #464646;
 }
 
-.company-name {
+.company-name,
+.company-name-green {
   position: absolute;
   bottom: 0;
+}
+
+/* HOME PAGE */
+.home {
+  background-image: url(/assets/images/blackvase-md.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #a69e97;
+}
+
+section {
+  position: relative;
+}
+
+.company-intro {
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-area {
+  position: relative;
+}
+
+.title-inside-container-left {
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+}
+
+.paragraph-left {
+  position: absolute;
+  top: 27rem;
+  left: 2rem;
+  right: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(0.5rem) saturate(100%) contrast(45%) brightness(130%);
+  max-width: 25rem;
+}
+
+/* FÖRETAG SECTION */
+.företag {
+  height: 100vw;
+  width: 100vw;
+}
+
+/* TJÄNSTER SECTION */
+a.btn-choose {
+  padding: 15px 32px;
+  border: 1px solid #d9d6d0;
+  background-color: #d9d6d0;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: none;
+  color: rgba(89, 81, 79);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.image-section {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blurred {
+  border: 1px solid #d9d6d0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.5rem) saturate(100%) contrast(45%) brightness(130%);
+}
+
+.cleaning-description {
+  width: 96vw;
+}
+
+.btn-container {
+  margin: 3rem;
+  text-align: right;
+}
+
+a.btn-cta {
+  padding: 16px 32px;
+  border: 1px solid #56732c;
+  border-radius: 35px;
+  background-color: #afbf75;
+  color: #d9d6d0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 3rem 0;
+  cursor: pointer;
 }
 
 /* NAVIGATION */
@@ -81,6 +231,19 @@ h3.link-item a {
   bottom: 1rem;
   right: 1rem;
   cursor: pointer;
+}
+.hamburger-menu-green {
+  font-size: 3rem;
+  color: #56732c;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.nav-green,
+.company-name-green {
+  z-index: 10;
 }
 
 .menu-full-page {
