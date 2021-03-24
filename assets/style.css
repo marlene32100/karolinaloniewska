@@ -72,6 +72,7 @@ h3.link-item a {
   font-family: "Lora", sans-serif;
   font-size: 3rem;
 }
+
 p {
   font-family: "Lora", sans-serif;
   font-size: 1.6rem;
@@ -90,6 +91,10 @@ p {
   font-weight: 600;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.service-intro {
+  font-size: 2.5rem;
 }
 
 .icon-title {
@@ -159,7 +164,7 @@ a .contact-icon {
 
 /* LANDING PAGE */
 .landing {
-  background-image: url(/assets/images/bathroom-md.jpg);
+  background-image: url(images/bathroom-md.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -175,7 +180,7 @@ a .contact-icon {
 
 /* HOME PAGE */
 .home {
-  background-image: url(/assets/images/blackvase-sm.jpg);
+  background-image: url(images/blackvase-sm.jpg);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -277,8 +282,8 @@ a.btn-choose {
 }
 
 .image-section {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 90%;
   object-fit: cover;
 }
 
@@ -317,7 +322,6 @@ a.btn-cta:hover {
 
 /* KONTAKT */
 .kontakt {
-  height: 100vh;
   width: 100vw;
 }
 
@@ -381,6 +385,38 @@ a.btn-cta:hover {
   cursor: pointer;
 }
 
+/* FOOTER */
+footer {
+  height: 15rem;
+  background-color: rgba(86, 115, 44, 0.5);
+}
+
+footer p {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #464646;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #d9d6d0;
+  font-size: 1.8rem;
+}
+
+footer p a:hover {
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.name-company {
+  padding-top: 5rem;
+}
+
+.contact-icon.last-icon {
+  padding-bottom: 5rem;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 375px) {
   .title-section {
@@ -395,7 +431,7 @@ a.btn-cta:hover {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home {
-    background-image: url(/assets/images/blackvase-lg.jpg);
+    background-image: url(images/blackvase-lg.jpg);
   }
   .company-name h1,
   .company-name h2 {
@@ -429,26 +465,134 @@ a.btn-cta:hover {
   .hamburger-menu-green {
     font-size: 5rem;
   }
-
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .home {
-      background-image: url(/assets/images/blackvase-lg.jpg);
-    }
+  .title-section,
+  .icon-title {
+    font-size: 3rem;
   }
-
-  /* X-Large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .landing {
-      background-image: url(images/bathroom-xl.jpg);
-      background-position: bottom center;
-    }
-    .home {
-      background-image: url(/assets/images/blackvase-xl.jpg);
-    }
+  .emphasis,
+  a.btn-choose .service-intro {
+    font-size: 2.5rem;
   }
+  .btn-container {
+    text-align: left;
+  }
+  .title-section,
+  .title-section-green {
+    padding-left: 3rem;
+  }
+}
 
-  /* XX-Large devices (larger desktops, 1400px and up) */
-  @media (min-width: 1400px) {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .company-name h1,
+  .company-name-green h1,
+  .hamburger-menu,
+  .hamburger-menu-green {
+    font-size: 5rem;
+  }
+  .company-name h2,
+  .company-name-green h2 {
+    font-size: 4rem;
+  }
+  .home {
+    background-image: url(images/blackvase-lg.jpg);
+  }
+  .title-section,
+  .icon-title {
+    font-size: 4rem;
+  }
+  .emphasis,
+  a.btn-choose,
+  .service-intro {
+    font-size: 2.5rem;
+  }
+  .title-section,
+  .title-section-green {
+    padding-left: 4rem;
+  }
+}
+/* Laptop landscape Non Retina Screen */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .title-inside-container-left {
+    top: 10rem;
+  }
+  .paragraph-left {
+    top: 40rem;
+    font-size: 5rem;
+  }
+  .image-section {
+    height: 70rem;
+    width: 80%;
+  }
+  .blurred {
+    width: 40rem;
+    padding: 1.5rem;
+  }
+  .centered-area .blurred {
+    margin: auto;
+  }
+  .centered-area {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn-container {
+    text-align: center;
+  }
+}
+
+/* Laptop landscape Retina Screen */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .title-inside-container-left {
+    top: 10rem;
+  }
+  .paragraph-left {
+    top: 40rem;
+    font-size: 5rem;
+  }
+  .image-section {
+    height: 70rem;
+    width: 80%;
+  }
+  .blurred {
+    width: 40rem;
+    padding: 1.5rem;
+  }
+  .centered-area .blurred {
+    margin: auto;
+  }
+  .centered-area {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn-container {
+    text-align: center;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .landing {
+    background-image: url(images/bathroom-xl.jpg);
+    background-position: bottom center;
+  }
+  .home {
+    background-image: url(images/blackvase-xl.jpg);
+  }
+  .title-section,
+  .icon-title {
+    font-size: 5rem;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .title-section {
+    font-size: 5.5rem;
   }
 }
