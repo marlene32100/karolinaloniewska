@@ -2,7 +2,6 @@
 
 * {
   font-size: 10px;
-  color: rgba(89, 81, 79);
 }
 
 body {
@@ -20,6 +19,26 @@ h1 {
 h2 {
   font-family: "Lora", sans-serif;
   font-size: 2.5rem;
+}
+
+.kontakt h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.kontakt h3 {
+  font-family: "Lora", sans-serif;
+  font-weight: 200;
+}
+
+.kontakt address {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.text-cta {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .company-name h2,
@@ -49,10 +68,19 @@ h3.link-item a {
   font-size: 3rem;
 }
 
-.paragraph-left,
+.paragraph-left {
+  font-family: "Lora", sans-serif;
+  font-size: 3rem;
+}
 p {
   font-family: "Lora", sans-serif;
   font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.text-company {
+  font-family: "Lora", sans-serif;
+  font-weight: 200;
 }
 
 .title-section {
@@ -60,6 +88,13 @@ p {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.icon-title {
+  font-size: 2.5rem;
+  padding-right: 1rem;
 }
 
 .emphasis {
@@ -74,8 +109,21 @@ p {
 
 /* COLOR PALETTE */
 
-.blurred {
-  color: rgba(89, 81, 79);
+.blurred,
+.emphasis,
+.brown {
+  color: rgb(89, 81, 79);
+}
+
+.företag,
+.kontakt {
+  background-color: rgb(89, 81, 79);
+  color: #d9d6d0;
+}
+
+.green,
+.kontakt h1 {
+  color: #afbf75;
 }
 
 .company-name,
@@ -99,13 +147,14 @@ p {
   color: #afbf75;
 }
 
-.paragraph-left {
-  background-color: rgba(86, 115, 44, 0.5);
-  color: #d9d6d0;
-}
-
 .scrolled {
   background-color: #d9d6d0;
+}
+
+a .contact-icon {
+  text-decoration: none;
+  font-size: 6rem;
+  padding: 2rem;
 }
 
 /* LANDING PAGE */
@@ -126,7 +175,7 @@ p {
 
 /* HOME PAGE */
 .home {
-  background-image: url(/assets/images/blackvase-md.jpg);
+  background-image: url(/assets/images/blackvase-sm.jpg);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -160,14 +209,56 @@ section {
   right: 2rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  backdrop-filter: blur(0.5rem) saturate(100%) contrast(45%) brightness(130%);
-  max-width: 25rem;
 }
 
 /* FÖRETAG SECTION */
 .företag {
-  height: 100vw;
+  height: auto;
   width: 100vw;
+  padding-bottom: 3rem;
+}
+
+.blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+
+.blockquote p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.blockquote p span {
+  font-size: 1.6rem;
+  font-style: italic;
+  float: right;
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid #afbf75;
+  height: 3px;
+  width: 200px;
+}
+
+.image-cropper {
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+.avatar {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 /* TJÄNSTER SECTION */
@@ -197,12 +288,7 @@ a.btn-choose {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(0.5rem) saturate(100%) contrast(45%) brightness(130%);
-}
-
-.cleaning-description {
-  width: 96vw;
+  background-color: #d9d6d0;
 }
 
 .btn-container {
@@ -221,6 +307,18 @@ a.btn-cta {
   font-size: 2rem;
   margin: 3rem 0;
   cursor: pointer;
+}
+
+a.btn-cta:hover {
+  -webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
+  background-color: rgba(86, 115, 44, 0.5);
+}
+
+/* KONTAKT */
+.kontakt {
+  height: 100vh;
+  width: 100vw;
 }
 
 /* NAVIGATION */
@@ -284,6 +382,11 @@ a.btn-cta {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 375px) {
+  .title-section {
+    font-size: 3.5rem;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -291,6 +394,9 @@ a.btn-cta {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .home {
+    background-image: url(/assets/images/blackvase-lg.jpg);
+  }
   .company-name h1,
   .company-name h2 {
     display: inline-block;
@@ -306,20 +412,43 @@ a.btn-cta {
     background-image: url(images/bathroom-l.jpg);
     background-position: bottom center;
   }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .landing {
-    background-image: url(images/bathroom-xl.jpg);
-    background-position: bottom center;
+  .title-inside-container-left {
+    top: 20rem;
+    font-size: 8rem;
   }
-}
+  .paragraph-left {
+    top: 55rem;
+    font-size: 5rem;
+  }
+  .company-name-green h1 {
+    font-size: 5rem;
+  }
+  .company-name-green h2 {
+    font-size: 3rem;
+  }
+  .hamburger-menu-green {
+    font-size: 5rem;
+  }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .home {
+      background-image: url(/assets/images/blackvase-lg.jpg);
+    }
+  }
+
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .landing {
+      background-image: url(images/bathroom-xl.jpg);
+      background-position: bottom center;
+    }
+    .home {
+      background-image: url(/assets/images/blackvase-xl.jpg);
+    }
+  }
+
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+  }
 }
