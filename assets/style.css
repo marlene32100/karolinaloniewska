@@ -15,6 +15,23 @@ body {
   width: 100%;
 }
 
+body:after {
+  content: "";
+  position: fixed; /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1; /* needed to keep in the background */
+  background: url(images/blackvase-sm.jpg) bottom right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #a69e97;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
@@ -186,6 +203,7 @@ a .contact-icon {
 }
 
 /* HOME PAGE */
+/*
 .home {
   background-image: url(images/blackvase-sm.jpg);
   background-position: bottom right;
@@ -194,6 +212,7 @@ a .contact-icon {
   background-size: cover;
   background-color: #a69e97;
 }
+*/
 
 section {
   position: relative;
