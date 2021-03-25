@@ -9,7 +9,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="pingback" href="https: //domainname.com/xmlrpc.php" />
+    <link rel="pingback" href="https://www.karolinaloniewska.se" />
     <title>Karolina Loniewska</title>
     <!-- style and script resources -->
     <link
@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style.css" media="all" />
+    <link rel="stylesheet" href="assets/home.css" media="all" />
     <script src=""></script>
     <!--meta properties -->
     <meta
@@ -73,23 +74,23 @@
     <meta name="generator" content="" />
     <!-- Site fevicon icons -->
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon-io/apple-touch-icon.png"
+    />
+    <link
       rel="icon"
-      href="images/icon/cropped-cropped-favicon-1-1-32x32.png"
+      type="image/png"
       sizes="32x32"
+      href="favicon-io/favicon-32x32.png"
     />
     <link
       rel="icon"
-      href="images/icon/cropped-cropped-favicon-1-1-192x192.png"
-      sizes="192x192"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-io/favicon-16x16.png"
     />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/icon/cropped-cropped-favicon-1-1-180x180.png"
-    />
-    <meta
-      name="msapplication-TileImage"
-      content="images/icon/cropped-cropped-favicon-1-1-270x270.png"
-    />
+    <link rel="manifest" href="favicon-io/site.webmanifest" />
     <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
   </head>
   <body class="home" id="home">
@@ -133,7 +134,7 @@
           </header>
           <nav class="mobile-nav nav-green">
             <div onclick="menuHome()">
-              <i class="fas fa-bars hamburger-menu-green"></i>
+              <i class="fas fa-bars hamburger-menu-green" id="hamburger"></i>
             </div>
           </nav>
         </div>
@@ -221,7 +222,10 @@
                   <a href="#vecko" class="btn-choose">Veckostädning</a>
                 </div>
                 <div class="col-12 mb-5">
-                  <a href="#engång" class="btn-choose">Engångstädning</a>
+                  <a href="#vecko" class="btn-choose">Engångstädning</a>
+                </div>
+                <div class="col-12 mb-5">
+                  <a href="#stor" class="btn-choose">Storstädning</a>
                 </div>
                 <div class="col-12 mb-5">
                   <a href="#flytt" class="btn-choose">Flyttstädning</a>
@@ -262,6 +266,66 @@
                 />
                 <img
                   src="assets/images/toilet-sm.jpg"
+                  alt="Toilet sink with toothbrush and soap in natural colors"
+                  class="image-section"
+                />
+              </picture>
+            </div>
+            <div class="col-12 col-md-6 mb-5">
+              <div class="centered-area">
+                <p class="cleaning-description blurred">
+                  <strong>Alla rum: </strong>
+                  Dammtorkning av öppna ytor; <br />Dammsugning och moppning av
+                  golv; <br /><br />
+                  <strong>Kök: </strong>Rengöring av diskbänk, bänkar och spis;
+                  <br />Rengöring av utsidor på vitvaror; <br />Avtorkning av
+                  alla köksluckor och utsida fläkt; <br />Rengöring av kakel;
+                  <br /><br />
+                  <strong>Badrum och toalett: </strong>
+                  Rengöring av badkar och duschkabin; <br />Rengöring av
+                  handfat; <br />Rengöring av toalettstol; <br />Putsning av
+                  speglar; <br />Rengöring av golv; <br />Rengöring av kakel.<br /><br />
+                  <strong>Priser från: </strong>
+                </p>
+                <div class="btn-container">
+                  <a
+                    href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
+                    rel="noopener"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="btn-cta"
+                    >Boka nu</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--STORSTÄDNING-->
+        <section class="container-fluid" id="stor">
+          <h1 class="title-section brown mb-5">
+            <i class="fas fa-leaf icon-title"></i> Storstädning<br />
+          </h1>
+          <div class="row">
+            <div
+              class="col-12 col-md-6 image-area text-center w-100 h-100 mb-5 p-0"
+            >
+              <picture>
+                <source
+                  srcset="assets/images/stor-xl.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="assets/images/stor-lg.jpg"
+                  media="(min-width: 992px)"
+                />
+                <source
+                  srcset="assets/images/stor-md.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="assets/images/stor-sm.jpg"
                   alt="Toilet sink with toothbrush and soap in natural colors"
                   class="image-section"
                 />
@@ -468,8 +532,17 @@
           <h1 class="title-section green">
             <i class="fas fa-leaf icon-title"></i>Kontakt
           </h1>
+          <div class="row">
+            <div class="col-12 text-center">
+              <img
+                src="assets/images/logo/logo.png"
+                alt="Karolina Loniewska städfirma logo"
+                class="logo-image"
+              />
+            </div>
+          </div>
           <h2 class="name-company">Karolina Loniewska</h2>
-          <h3>Städfirma</h3>
+          <h3 class="firma">Städfirma</h3>
           <address>
             Åsgatan 71,<br />
             741 45 Knivsta
@@ -486,7 +559,7 @@
                 ></a>
               </div>
               <div class="col-12 text-center">
-                <p class="text-cta">Boka nu!</p>
+                <p class="text-cta">Välkommen!</p>
                 <a href="mailto:karolinaloniewska24@gmail.com"
                   ><i
                     class="fas fa-envelope-open contact-icon green last-icon"
@@ -500,7 +573,8 @@
       <footer class="text-center">
         <p>
           Website created by
-          <a href="http://www.blueblissstudio.com">Blue Bliss Studio</a>, 2020
+          <a href="http://www.blueblissstudio.com">Blue Bliss Studio</a>
+          - 2020
         </p>
       </footer>
     </div>
@@ -522,6 +596,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/background-nav.js" async defer></script>
-    <script src="assets/js/menu-home.js" async defer></script>
+    <script src="assets/js/hoverMenu.js" async defer></script>
+    <script src="assets/js/menuHome.js" async defer></script>
   </body>
 </html>

@@ -15,23 +15,6 @@ body {
   width: 100%;
 }
 
-body:after {
-  content: "";
-  position: fixed; /* stretch a fixed position to the whole screen */
-  top: 0;
-  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
-  left: 0;
-  right: 0;
-  z-index: -1; /* needed to keep in the background */
-  background: url(images/blackvase-sm.jpg) bottom right;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #a69e97;
-}
-
 /* TYPOGRAPHY */
 
 h1 {
@@ -51,6 +34,10 @@ h2 {
 .kontakt h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
+}
+
+h3.firma {
+  font-weight: 400;
 }
 
 .kontakt address {
@@ -344,15 +331,26 @@ a.btn-cta {
   cursor: pointer;
 }
 
-a.btn-cta:hover {
+a.btn-cta:hover,
+a.btn-cta:active {
   -webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
-  background-color: rgba(86, 115, 44, 0.5);
+  background-color: rgb(86, 115, 44);
 }
 
 /* KONTAKT */
+
+.logo-image {
+  height: 10rem;
+  width: 10rem;
+}
+
 .kontakt {
   width: 100vw;
+}
+
+i.contact-icon:hover {
+  color: #56732c;
 }
 
 /* NAVIGATION */
@@ -427,21 +425,22 @@ a.btn-cta:hover {
 
 /* FOOTER */
 footer {
-  height: 15rem;
+  height: 18rem;
   background-color: rgba(86, 115, 44, 0.5);
 }
 
 footer p {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  color: #464646;
+  font-weight: 200;
+  color: #d9d6d0;
 }
 
 footer p a {
   text-decoration: none;
   color: #d9d6d0;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 footer p a:hover {
@@ -478,7 +477,7 @@ footer p a:hover {
     display: inline-block;
   }
   .company-name h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .company-name h2 {
     margin-left: 3rem;
@@ -524,6 +523,19 @@ footer p a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .title-inside-container-left {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    font-size: 5rem;
+  }
+  .paragraph-left {
+    position: absolute;
+    top: 27rem;
+    left: 2rem;
+    right: 2rem;
+  }
+
   .company-name h1,
   .company-name-green h1,
   .hamburger-menu,
@@ -549,6 +561,10 @@ footer p a:hover {
   .title-section,
   .title-section-green {
     padding-left: 4rem;
+  }
+  .blurred {
+    width: 40rem;
+    padding: 1.5rem;
   }
 }
 /* Laptop landscape Non Retina Screen */
@@ -634,11 +650,71 @@ footer p a:hover {
   .icon-title {
     font-size: 5rem;
   }
+  .title-inside-container-left {
+    top: 10rem;
+  }
+  .paragraph-left {
+    top: 40rem;
+    font-size: 5rem;
+  }
+  .image-section {
+    height: 70rem;
+    width: 80%;
+  }
+  .blurred {
+    width: 40rem;
+    padding: 1.5rem;
+  }
+  .centered-area .blurred {
+    margin: auto;
+  }
+  .centered-area {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-container {
+    text-align: center;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .title-section {
     font-size: 5.5rem;
+  }
+  .title-inside-container-left {
+    top: 10rem;
+  }
+  .paragraph-left {
+    top: 40rem;
+    font-size: 5rem;
+  }
+  .image-section {
+    height: 70rem;
+    width: 80%;
+  }
+  .blurred {
+    width: 40rem;
+    padding: 1.5rem;
+  }
+  .centered-area .blurred {
+    margin: auto;
+  }
+  .centered-area {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-container {
+    text-align: center;
   }
 }

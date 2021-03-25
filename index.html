@@ -71,25 +71,25 @@
     <meta name="yandex-verification" content="" />
     <!--powered by meta-->
     <meta name="generator" content="" />
-    <!-- Site fevicon icons -->
+    <!-- Site favicon icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon-io/apple-touch-icon.png"
+    />
     <link
       rel="icon"
-      href="images/icon/cropped-cropped-favicon-1-1-32x32.png"
+      type="image/png"
       sizes="32x32"
+      href="favicon-io/favicon-32x32.png"
     />
     <link
       rel="icon"
-      href="images/icon/cropped-cropped-favicon-1-1-192x192.png"
-      sizes="192x192"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-io/favicon-16x16.png"
     />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/icon/cropped-cropped-favicon-1-1-180x180.png"
-    />
-    <meta
-      name="msapplication-TileImage"
-      content="images/icon/cropped-cropped-favicon-1-1-270x270.png"
-    />
+    <link rel="manifest" href="favicon-io/site.webmanifest" />
     <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
   </head>
   <body class="landing" id="landing">
@@ -101,7 +101,7 @@
     <![endif]-->
     <div class="container-fluid menu-full-page text-center" id="menu-full-page">
       <div class="menu-links p-0" id="menu-links">
-        <h3 class="link-item mb-3"><a href="home.html">home page</a></h3>
+        <h3 class="link-item mb-3"><a href="home.html">välkommen</a></h3>
         <h3 class="link-item mb-3">
           <a href="home.html#företag">om företag</a>
         </h3>
@@ -127,7 +127,7 @@
       </header>
       <nav class="mobile-nav">
         <div onclick="menu()">
-          <i class="fas fa-bars hamburger-menu"></i>
+          <i class="fas fa-bars hamburger-menu" id="hamburger"></i>
         </div>
       </nav>
     </div>
@@ -148,6 +148,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/hoverMenu.js" async defer></script>
     <script src="assets/js/menu.js" async defer></script>
   </body>
 </html>
