@@ -72,6 +72,7 @@ h3.link-item a {
 .link-item a:focus,
 .link-item a:active {
   font-weight: 600;
+  text-decoration: none;
 }
 
 .close-icon {
@@ -106,6 +107,8 @@ p {
 .service-intro {
   font-size: 2rem;
   margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
 }
 
 .icon-title {
@@ -124,12 +127,27 @@ p {
   font-weight: 600;
 }
 
+.mobile-col-brown .emphasis strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 /* COLOR PALETTE */
 
 .blurred,
 .emphasis,
 .brown {
   color: rgb(89, 81, 79);
+}
+
+.mobile-col-brown {
+  background-color: #464646;
+  color: #d9d6d0;
+}
+
+.mobile-col-brown .emphasis {
+  color: #d9d6d0;
+  margin: 3rem 0;
 }
 
 .foretag,
@@ -162,6 +180,7 @@ p {
 .close-icon:focus,
 .close-icon:active {
   color: #afbf75;
+  text-decoration: none;
 }
 
 .scrolled {
@@ -284,7 +303,16 @@ a.btn-choose {
   text-transform: uppercase;
   font-size: 2rem;
   cursor: pointer;
-  margin-left: 1.5rem;
+}
+
+a.btn-choose:hover,
+a.btn-choose:active {
+  background-color: #464646;
+  color: #d9d6d0;
+  border: 2px solid #d9d6d0;
+  -webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
 .last-emphasis {
@@ -331,6 +359,7 @@ a.btn-cta:active {
   -webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.5);
   background-color: rgb(86, 115, 44);
+  text-decoration: none;
 }
 
 /* KONTAKT */
@@ -408,7 +437,7 @@ i.contact-icon:hover {
 
 .close-icon {
   position: absolute;
-  bottom: 15rem;
+  bottom: 12rem;
   left: 50%;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
@@ -463,6 +492,9 @@ footer p a:hover {
   .title-section {
     font-size: 3.5rem;
   }
+  a.btn-choose {
+    margin-left: 1.5rem;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -473,6 +505,9 @@ footer p a:hover {
   .logo-image {
     height: 15rem;
     width: auto;
+  }
+  .cleaning-selection-col {
+    text-align: center;
   }
 }
 
@@ -532,7 +567,7 @@ footer p a:hover {
     padding-left: 3rem;
   }
   .logo-nav {
-    height: 15rem;
+    height: 10rem;
     width: auto;
     margin: 2rem;
   }
