@@ -86,7 +86,7 @@ h3.link-item a {
 p {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .text-company {
@@ -104,7 +104,8 @@ p {
 }
 
 .service-intro {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 3rem auto;
 }
 
 .icon-title {
@@ -113,7 +114,7 @@ p {
 }
 
 .emphasis {
-  font-size: 2.6rem;
+  font-size: 2rem;
 }
 
 .cleaning-description strong,
@@ -131,7 +132,7 @@ p {
   color: rgb(89, 81, 79);
 }
 
-.företag,
+.foretag,
 .kontakt {
   background-color: rgb(89, 81, 79);
   color: #d9d6d0;
@@ -190,16 +191,6 @@ a .contact-icon {
 }
 
 /* HOME PAGE */
-/*
-.home {
-  background-image: url(images/blackvase-sm.jpg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #a69e97;
-}
-*/
 
 section {
   position: relative;
@@ -228,9 +219,8 @@ section {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
-
-/* FÖRETAG SECTION */
-.företag {
+/* foretag SECTION */
+.foretag {
   height: auto;
   width: 100vw;
   padding-bottom: 3rem;
@@ -294,6 +284,11 @@ a.btn-choose {
   text-transform: uppercase;
   font-size: 2rem;
   cursor: pointer;
+  margin-left: 1.5rem;
+}
+
+.last-emphasis {
+  margin-bottom: 3rem;
 }
 
 .image-section {
@@ -342,7 +337,7 @@ a.btn-cta:active {
 
 .logo-image {
   height: 10rem;
-  width: 10rem;
+  width: auto;
 }
 
 .kontakt {
@@ -354,6 +349,13 @@ i.contact-icon:hover {
 }
 
 /* NAVIGATION */
+
+.logo-nav {
+  height: 10rem;
+  width: auto;
+  margin: 0.5rem;
+}
+
 .hamburger-menu {
   font-size: 3rem;
   color: #d9d6d0;
@@ -406,7 +408,7 @@ i.contact-icon:hover {
 
 .close-icon {
   position: absolute;
-  bottom: 6rem;
+  bottom: 15rem;
   left: 50%;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
@@ -465,6 +467,13 @@ footer p a:hover {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .blurred.service-intro {
+    width: 50rem;
+  }
+  .logo-image {
+    height: 15rem;
+    width: auto;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -504,6 +513,9 @@ footer p a:hover {
   .hamburger-menu-green {
     font-size: 5rem;
   }
+  .blurred.service-intro {
+    width: 60rem;
+  }
   .title-section,
   .icon-title {
     font-size: 3rem;
@@ -518,6 +530,15 @@ footer p a:hover {
   .title-section,
   .title-section-green {
     padding-left: 3rem;
+  }
+  .logo-nav {
+    height: 15rem;
+    width: auto;
+    margin: 2rem;
+  }
+  .logo-image {
+    height: 20rem;
+    width: auto;
   }
 }
 
@@ -568,7 +589,7 @@ footer p a:hover {
   }
 }
 /* Laptop landscape Non Retina Screen */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 1) {
   .title-inside-container-left {
     top: 10rem;
   }
@@ -602,9 +623,9 @@ footer p a:hover {
 }
 
 /* Laptop landscape Retina Screen */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 2) and (-webkit-min-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 2) and (-o-min-pixel-ratio: 2/1),
+  screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .title-inside-container-left {
     top: 10rem;
   }

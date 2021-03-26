@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body:after {
   content: "";
   position: fixed; /* stretch a fixed position to the whole screen */
@@ -7,9 +14,6 @@ body:after {
   right: 0;
   z-index: -1; /* needed to keep in the background */
   background: url(images/blackvase-sm.jpg) bottom right;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #a69e97;

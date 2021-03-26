@@ -9,7 +9,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="pingback" href="https://www.karolinaloniewska.se" />
+    <link rel="pingback" href="https://www.karolinaloniewska.se/home.html" />
     <title>Karolina Loniewska</title>
     <!-- style and script resources -->
     <link
@@ -26,7 +26,6 @@
     />
     <link rel="stylesheet" href="assets/style.css" media="all" />
     <link rel="stylesheet" href="assets/home.css" media="all" />
-    <script src=""></script>
     <!--meta properties -->
     <meta
       name="description"
@@ -37,7 +36,6 @@
       name="robots"
       content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1"
     />
-    <link rel="canonical" href="" />
     <!--open graph meta tags for social sites and search engines-->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -129,8 +127,17 @@
         <!--NAVBAR-->
         <div class="header-container fixed-bottom">
           <header class="company-name-green w-100">
-            <h1>KAROLINA LONIEWSKA</h1>
-            <h2>Städfirma</h2>
+            <picture>
+              <source
+                srcset="assets/images/logo/logo-lg-green.png"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="assets/images/logo/logo-green.png"
+                alt="Karolina Loniewska logo green"
+                class="logo-nav"
+              />
+            </picture>
           </header>
           <nav class="mobile-nav nav-green">
             <div onclick="menuHome()">
@@ -149,7 +156,7 @@
           </div>
         </section>
         <!--ABOUT COMPANY SECTION-->
-        <section class="företag container-fluid" id="företag">
+        <section class="foretag container-fluid" id="foretag">
           <h1 class="title-section green">
             <i class="fas fa-leaf icon-title green"></i>Företag
           </h1>
@@ -208,15 +215,23 @@
           <h1 class="title-section brown">
             <i class="fas fa-leaf icon-title"></i> Tjänster
           </h1>
-          <p class="blurred service-intro">
-            Tänk om du kunde ha ett helt rent hus varje vecka, utan att spendera
-            en enda minut städning?
-          </p>
+          <div class="blurred service-intro">
+            <p class="service-intro">
+              Tänk om du kunde ha ett helt rent hus varje vecka, utan att
+              spendera en enda minut städning?
+            </p>
+            <p class="emphasis">Jag tar hand om allt medan du chillar.</p>
+            <p class="emphasis last-emphasis">
+              Alla priser från 240kr/timme efter RUT
+            </p>
+          </div>
+
           <div class="row mb-5">
             <div class="col-12 col-md-6">
               <div class="row section-text-area">
-                <div class="col-12 mb-5">
+                <div class="col-12 mb-5 text-center">
                   <p class="emphasis">Jag tar hand om allt medan du chillar.</p>
+                  <p class="emphasis">Alla priser från 240kr/timme efter RUT</p>
                 </div>
                 <div class="col-12 mb-5">
                   <a href="#vecko" class="btn-choose">Veckostädning</a>
@@ -285,13 +300,11 @@
                   Rengöring av badkar och duschkabin; <br />Rengöring av
                   handfat; <br />Rengöring av toalettstol; <br />Putsning av
                   speglar; <br />Rengöring av golv; <br />Rengöring av kakel.<br /><br />
-                  <strong>Priser från: </strong>
                 </p>
                 <div class="btn-container">
                   <a
                     href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
-                    rel="noopener"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                     class="btn-cta"
                     >Boka nu</a
@@ -335,23 +348,33 @@
               <div class="centered-area">
                 <p class="cleaning-description blurred">
                   <strong>Alla rum: </strong>
-                  Dammtorkning av öppna ytor; <br />Dammsugning och moppning av
-                  golv; <br /><br />
-                  <strong>Kök: </strong>Rengöring av diskbänk, bänkar och spis;
-                  <br />Rengöring av utsidor på vitvaror; <br />Avtorkning av
-                  alla köksluckor och utsida fläkt; <br />Rengöring av kakel;
-                  <br /><br />
+                  Dammsugning <br />Fuktmoppning<br />
+                  Dammtorkning av och fönsterbrädor<br />
+                  Dammtorkning av speglar, element, kontakter och
+                  strömbrytare<br />
+                  Dammsugning av klädda/stoppade möbler<br />
+                  Dammsugning av mattor<br /><br />
+                  <strong>Kök: </strong>Torkning av köksluckor in- och
+                  utvändigt<br />Sopskåpet (in- och utvändigt) <br />Rengöring
+                  av spis, ugn och mikrovågsugn (in- och utvändigt)
+                  <br />Diskbänk <br />Kyl, frys och diskmaskin (utvändigt och
+                  runt kanter)<br />
+                  Torkning under och över överskåp<br />
+                  Väggar ovanför diskbänk och köksbänkar<br />
+                  Torkning av bord, stolar och lampor <br />Rengöring av
+                  golvsocklar, element, kontakter, strömbrytare, karmar och
+                  dörrar. <br /><br />
                   <strong>Badrum och toalett: </strong>
-                  Rengöring av badkar och duschkabin; <br />Rengöring av
-                  handfat; <br />Rengöring av toalettstol; <br />Putsning av
-                  speglar; <br />Rengöring av golv; <br />Rengöring av kakel.<br /><br />
-                  <strong>Priser från: </strong>
+                  Rengöring av toalett, dusch och badkar, avkalkningsmedel vid
+                  behov <br />Rengöring under badkar och golvbrunn<br />Putsning
+                  av kranar, glasväggar och speglar <br />Torkning av
+                  badrumsskåp och hyllor <br />Torkning av väggar, strömbrytare,
+                  dörr, dörrkarm, lampor och ventiler<br /><br />
                 </p>
                 <div class="btn-container">
                   <a
                     href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
-                    rel="noopener"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                     class="btn-cta"
                     >Boka nu</a
@@ -386,13 +409,11 @@
                   badrumsskåp; <br />Rensning golvbrunnar; <br /><br />
                   <strong>Ute: </strong>Städning och torkning av alla ytor på
                   balkong eller uteplats;<br /><br />
-                  <strong>Priser från: </strong>
                 </p>
                 <div class="btn-container">
                   <a
                     href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
-                    rel="noopener"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                     class="btn-cta"
                     >Boka nu</a
@@ -440,8 +461,7 @@
                 <div class="btn-container">
                   <a
                     href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
-                    rel="noopener"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                     class="btn-cta"
                     >Boka nu</a
@@ -471,8 +491,6 @@
           </div>
         </section>
 
-        <!--STORSTÄDNING-->
-        <section></section>
         <!--MILJä-->
         <section class="miljö container-fluid" id="miljö">
           <h1 class="title-section brown">
@@ -516,8 +534,7 @@
                 <div class="btn-container">
                   <a
                     href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
-                    rel="noopener"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     target="_blank"
                     class="btn-cta"
                     >Boka nu</a
@@ -534,15 +551,20 @@
           </h1>
           <div class="row">
             <div class="col-12 text-center">
-              <img
-                src="assets/images/logo/logo.png"
-                alt="Karolina Loniewska städfirma logo"
-                class="logo-image"
-              />
+              <picture>
+                <source
+                  srcset="assets/images/logo/logo-lg.png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="assets/images/logo/logo.png"
+                  alt="Karolina Loniewska städfirma logo"
+                  class="logo-image"
+                />
+              </picture>
             </div>
           </div>
-          <h2 class="name-company">Karolina Loniewska</h2>
-          <h3 class="firma">Städfirma</h3>
+
           <address>
             Åsgatan 71,<br />
             741 45 Knivsta
@@ -553,8 +575,7 @@
                 <a
                   href="https://www.facebook.com/Karolina-Loniewska-st%C3%A4dfirma-109932510824861/"
                   target="_blank"
-                  rel="noopener"
-                  rel="noreferral"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-facebook contact-icon green"></i
                 ></a>
               </div>
@@ -573,7 +594,12 @@
       <footer class="text-center">
         <p>
           Website created by
-          <a href="http://www.blueblissstudio.com">Blue Bliss Studio</a>
+          <a
+            href="http://www.blueblissstudio.com"
+            target="_blank"
+            rel="noopener"
+            >Blue Bliss Studio</a
+          >
           - 2020
         </p>
       </footer>
