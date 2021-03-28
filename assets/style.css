@@ -201,6 +201,7 @@ a .contact-icon {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  overflow-y: hidden;
 }
 
 .company-name,
