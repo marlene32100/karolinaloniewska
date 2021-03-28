@@ -22,9 +22,15 @@ body:after {
   .home {
     background-image: url(images/blackvase-lg.jpg);
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .home {
       background-image: url(images/blackvase-xl.jpg);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .home {
+      background-image: url(images/blackvase.jpg);
     }
   }
 }

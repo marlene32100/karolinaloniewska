@@ -748,6 +748,13 @@ footer p a:hover {
   .home {
     background-image: url(images/blackvase-xl.jpg);
   }
+
+  .title-inside-container-left,
+  .paragraph-left,
+  .btn-container.btn-home {
+    left: 20rem;
+  }
+
   .title-section,
   .icon-title {
     font-size: 5rem;
