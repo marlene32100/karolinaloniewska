@@ -18,3 +18,13 @@ body:after {
   background-repeat: no-repeat;
   background-color: #a69e97;
 }
+@media (min-width: 768px) {
+  .home {
+    background-image: url(images/blackvase-lg.jpg);
+  }
+  @media (min-width: 1200px) {
+    .home {
+      background-image: url(images/blackvase-xl.jpg);
+    }
+  }
+}

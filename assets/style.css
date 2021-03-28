@@ -220,6 +220,13 @@ section {
   width: 100vw;
 }
 
+.btn-container.btn-home {
+  position: absolute;
+  top: 40rem;
+  left: 0;
+  margin: 0;
+}
+
 .left-area {
   position: relative;
 }
@@ -291,6 +298,7 @@ section {
 }
 
 /* TJÄNSTER SECTION */
+
 a.btn-choose {
   padding: 15px 32px;
   border: 1px solid #d9d6d0;
@@ -301,7 +309,7 @@ a.btn-choose {
   color: rgba(89, 81, 79);
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
@@ -495,6 +503,12 @@ footer p a:hover {
   a.btn-choose {
     margin-left: 1.5rem;
   }
+  .btn-container.btn-home {
+    position: absolute;
+    top: 40rem;
+    left: 2rem;
+    margin: 0;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -508,6 +522,9 @@ footer p a:hover {
   }
   .cleaning-selection-col {
     text-align: center;
+  }
+  .btn-choose {
+    font-size: 2rem;
   }
 }
 
@@ -575,6 +592,17 @@ footer p a:hover {
     height: 20rem;
     width: auto;
   }
+
+  .btn-container.btn-home {
+    left: 2rem;
+    top: 75rem;
+  }
+  .cleaning-options {
+    width: auto;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 6rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -625,12 +653,21 @@ footer p a:hover {
 }
 /* Laptop landscape Non Retina Screen */
 @media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 1) {
+  .btn-container.btn-home {
+    left: 2rem;
+    top: 60rem;
+  }
+
   .title-inside-container-left {
     top: 10rem;
   }
   .paragraph-left {
     top: 40rem;
     font-size: 5rem;
+  }
+  .btn-container.btn-home {
+    left: 0;
+    top: 55rem;
   }
   .image-section {
     height: 70rem;
@@ -661,6 +698,10 @@ footer p a:hover {
 @media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 2) and (-webkit-min-pixel-ratio: 2),
   screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 2) and (-o-min-pixel-ratio: 2/1),
   screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .btn-container.btn-home {
+    left: 2rem;
+    top: 60rem;
+  }
   .title-inside-container-left {
     top: 10rem;
   }
@@ -695,6 +736,10 @@ footer p a:hover {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .btn-container.btn-home {
+    left: 2rem;
+    top: 60rem;
+  }
   .landing {
     background-image: url(images/bathroom-xl.jpg);
     background-position: bottom center;
@@ -772,5 +817,8 @@ footer p a:hover {
   }
   .btn-container {
     text-align: center;
+  }
+
+  @media (min-width: 1400px) {
   }
 }
