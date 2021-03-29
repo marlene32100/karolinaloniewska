@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-body:after {
+body::after {
   content: "";
   position: fixed; /* stretch a fixed position to the whole screen */
   top: 0;

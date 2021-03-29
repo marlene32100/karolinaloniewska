@@ -466,7 +466,7 @@ i.contact-icon:hover {
 /* FOOTER */
 footer {
   height: 18rem;
-  background-color: rgba(86, 115, 44, 0.5);
+  background-color: black;
 }
 
 footer p {

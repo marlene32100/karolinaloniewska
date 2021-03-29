@@ -231,3 +231,53 @@ This will improve the loading speed and at the same time will improve the user e
 ---
 
 ### Testing
+
+- #### Functionality Testing
+
+  All the links have been checked and they all are working.
+  Html and Css have been validated with HTML Validator and CSS Validator.
+  I tested Javascript while compiling using console.log to check if I was coding properly, and I also checked with JSHint.
+
+* #### Usability Testing
+
+  To test the usability I tried myself the website on multiple devices and using Chrome DevTools.
+  The webite is easy to navigate and the typography is legible, plus it is responsive on all devices.
+  All the images have the "alt" text and are responsive. I used the picture tag to allow the browser to pick up the right format of the image according to the screen size.
+
+  The Html code has been properly written to help screen readers for visually impaired users. The contrast color between background and text in the call-to-action buttons could be a little stronger to make it more accessible, but considering the low percentage of potential users that may have visual impairment, I chose to leave a softer tone which goes better with the general styling of the website.
+
+* #### Compatibility Testing
+
+  I tested the website on multiple browsers:
+
+  - Chrome
+  - Edge
+  - Firefox
+  - Internet Explorer
+  - Safari
+  - Opera
+
+  I tested also on multiple devices with Google DevTools, AmIResponsive, on iPhone 11 and extra-large desktop.
+
+  After testing I added additional styling for iOS since it has some bugs with the "fixed" property. The property has been used to display the background image in the home page. To make it perform in the proper way also on iOS, I decided to add the background image to a pseudo-element `html ::after ` in the body:
+
+  ```html
+  body::after { content: ""; position: fixed; top: 0; height: 100vh; left: 0;
+  right: 0; z-index: -1; background: url(images/blackvase-sm.jpg) bottom right;
+  background-size: cover; background-repeat: no-repeat; background-color:
+  #a69e97; }
+  ```
+
+* #### Performance Testing
+
+  I tested the website with Google PageSpeed Insights and the result was very good for desktop devices, a little less for mobiles due to Bootstrap CDN.
+
+  I tested further with Google Test Mobile Friendly and the result was really good. The website performs well on mobile phones.
+
+  External links have `html rel="noopener noreferrer"` to improve security.
+
+  Meta tags have been widely added to improve SEO optimization on search engines.
+
+### Bugs
+
+So far there are no known bugs, since the website has been widely tested and all small details have been fixed to perform well and give a very good user experience.
